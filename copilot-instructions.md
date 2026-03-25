@@ -1,0 +1,3 @@
+This project is an HTML webapp that uses Tailwind CSS for styling. The codebase is primarily written in JavaScript and HTML, with some CSS for custom styles. The project follows a modular structure, with separate files for different components and features. The code style emphasizes readability and maintainability, with consistent indentation, meaningful variable names, and clear comments where necessary. The project also adheres to best practices for web development, including responsive design and accessibility considerations.
+
+There are a couple libraries installed for charting and tables. It is started with live-server.

@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+/* Quicksand font weight assignments */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+.font-vivaldi {
+  font-family: 'Vivaldi', cursive;
+}
+
+.text-sm.font-medium,
+label,
+.nav-link {
+  font-weight: 500;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+/* Override gray text colors with custom color */
+.text-gray-400,
+.text-gray-500,
+.text-gray-600,
+.text-gray-700,
+.text-gray-800 {
+  color: #735b52 !important;
+}
+
+/* Override pink accent colors with custom color */
+.text-pink-400 {
+  color: #735b52 !important;
+}
+.bg-pink-400 {
+  background-color: #f0d7d1 !important;
+}
+.hover\:bg-pink-500:hover {
+  background-color: #e6c4bc !important;
+}
+.hover\:text-pink-400:hover {
+  color: #735b52 !important;
+}
+.hover\:bg-pink-400:hover {
+  background-color: #f0d7d1 !important;
+}
+.focus\:border-pink-400:focus {
+  border-color: #f0d7d1 !important;
+}
+.focus\:ring-pink-200:focus {
+  --tw-ring-color: #f0d7d1 !important;
+}
+
+/* Glide carousel overrides */
+.glide__arrow {
+  background-color: rgba(240, 215, 209, 0.85) !important;
+  border: none !important;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12) !important;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: background-color 0.2s;
+}
+.glide__arrow:hover {
+  background-color: rgba(230, 196, 188, 0.95) !important;
+}
+.glide__bullet {
+  background-color: #f0d7d1 !important;
+  border: none !important;
+  width: 10px;
+  height: 10px;
+  box-shadow: none !important;
+}
+.glide__bullet--active {
+  background-color: #e6c4bc !important;
+}
+.glide__bullets {
+  bottom: -28px !important;
+}
+.glide__slide {
+  transition: transform 0.05s linear, opacity 0.05s linear;
+  will-change: transform, opacity;
+}

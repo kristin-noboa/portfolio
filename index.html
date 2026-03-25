@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristin's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="./src/css/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="./node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  </head>
+
+  <body class="bg-[#feeeef] text-[#735b52]">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm transition-transform duration-300">
+      <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+        <a href="#home" class="text-xl font-bold text-pink-400 font-vivaldi">Kristin Noboa</a>
+        <div class="hidden md:flex gap-8">
+          <a href="#home" class="nav-link text-sm font-medium text-gray-600 hover:text-pink-400 transition-colors">Home</a>
+          <a href="#about" class="nav-link text-sm font-medium text-gray-600 hover:text-pink-400 transition-colors">About</a>
+          <a href="#portfolio" class="nav-link text-sm font-medium text-gray-600 hover:text-pink-400 transition-colors">Portfolio</a>
+          <a href="#contact" class="nav-link text-sm font-medium text-gray-600 hover:text-pink-400 transition-colors">Contact</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-gray-600 hover:text-pink-400" aria-label="Toggle menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-sm border-t border-gray-100">
+        <div class="flex flex-col px-6 py-4 gap-4">
+          <a href="#home" class="nav-link text-sm font-medium text-gray-600 hover:text-pink-400 transition-colors">Home</a>
+          <a href="#about" class="nav-link text-sm font-medium text-gray-600 hover:text-pink-400 transition-colors">About</a>
+          <a href="#portfolio" class="nav-link text-sm font-medium text-gray-600 hover:text-pink-400 transition-colors">Portfolio</a>
+          <a href="#contact" class="nav-link text-sm font-medium text-gray-600 hover:text-pink-400 transition-colors">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===================== HOME ===================== -->
+    <section id="home">
+      <!-- Landing -->
+      <div class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-16">
+        <h1 class="text-6xl md:text-8xl font-extrabold text-pink-400 leading-tight font-vivaldi">Kristin Noboa</h1>
+        <p class="mt-4 text-lg md:text-xl text-gray-500 max-w-xl">Designer · Developer · Creative</p>
+        <a href="#about" class="mt-10 inline-block px-8 py-3 rounded-full bg-pink-400 text-white font-semibold hover:bg-pink-500 transition-colors">Learn More</a>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="relative h-[60vh] md:h-[70vh] bg-gray-200 flex items-center justify-center overflow-hidden">
+        <img src="./public/assets/Titanic%20Plains.jpg" alt="Hero" class="absolute inset-0 w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#feeeef]/60 to-transparent"></div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="py-20 md:py-28 bg-[#feeeef]">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-pink-400 text-center mb-14">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <!-- Photo -->
+          <div class="w-56 h-56 md:w-72 md:h-72 flex-shrink-0 rounded-2xl overflow-hidden">
+            <img src="./public/assets/portrait.jpg" alt="Kristin" class="w-full h-full object-cover" />
+          </div>
+          <!-- Paragraphs only -->
+          <div class="flex-1 text-center md:text-left">
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              Hi, I'm Kristin! I'm a creative professional with hands-on experience in both digital and physical formats. No matter the medium, I lead with passion and pride in my work.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              From the moment I was born, my mother knew I was a chatterbox. Throughout my life I've learned how to channel that talent into rapport building and networking. I graduated high school at age 17 with High Honors and Distinction. From there I spent time traveling the East Coast of the States, gathering both friends and skills in my professional life.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed mb-4">
+              My most recent achievement includes returning to higher education at Seneca College. With a current 3.8 GPA, I've honed my digital craft through Adobe Suite applications while studying Interactive Media Design.
+            </p>
+            <p class="text-gray-600 text-lg leading-relaxed">
+              I'm always excited to meet new people and enhance my understanding of different world-views. Let's make something great together!
+            </p>
+          </div>
+        </div>
+        <div class="text-center md:text-left md:pl-[calc(18rem+3rem)] mt-8">
+          <a href="./public/assets/KN%20Resume%202026.pdf" target="_blank" class="inline-block px-8 py-3 rounded-full bg-pink-400 text-white font-semibold hover:bg-pink-500 transition-colors">
+            View My Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section id="portfolio" class="py-20 md:py-28 bg-[#feeeef]">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-pink-400 text-center mb-6">Portfolio</h2>
+        <p class="text-center text-gray-500 mb-10">A selection of work across disciplines</p>
+
+        <!-- Discipline Filter -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12">
+          <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-pink-400 text-white transition-colors" data-filter="all">All</button>
+          <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-white text-gray-600 hover:bg-pink-400 hover:text-white transition-colors" data-filter="illustration">Illustration</button>
+          <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-white text-gray-600 hover:bg-pink-400 hover:text-white transition-colors" data-filter="uiux-design">UI/UX Design</button>
+          <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-white text-gray-600 hover:bg-pink-400 hover:text-white transition-colors" data-filter="motion-design">Motion Design</button>
+          <button class="filter-btn px-5 py-2 rounded-full text-sm font-medium bg-white text-gray-600 hover:bg-pink-400 hover:text-white transition-colors" data-filter="editorial-design">Editorial Design</button>
+        </div>
+
+        <!-- Works Grid -->
+        <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Illustration -->
+          <div class="portfolio-item group" data-discipline="illustration">
+            <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow">
+              <img src="./public/assets/golden%20ratio%20icons.png" alt="Golden Ratio Icons" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+                <div class="text-white text-sm text-center">
+                  <p class="font-semibold mb-2">Adobe Illustrator - 2025</p>
+                  <p>A set of matching icons created using golden ratio circles and angular geometry. Inspired by the cryptids of North America, stained glass art, and the proverb "See no evil, speak no evil, hear no evil".</p>
+                  <p class="mt-2">See the full document <a href="./public/assets/Golden%20Ratio%20Icons.pdf" target="_blank" class="underline font-semibold hover:text-pink-300">here</a>.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-3 font-semibold text-gray-700">Golden Ratio Icons</h3>
+            <p class="text-sm text-gray-400">Illustration</p>
+          </div>
+          <div class="portfolio-item group" data-discipline="uiux-design">
+            <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow">
+              <img src="./public/assets/dairy%20drop%20prototype.png" alt="Dairy Drop Prototype" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+                <div class="text-white text-sm text-center">
+                  <p class="font-semibold mb-2">Figma - 2025</p>
+                  <p>An app prototype created based on existing branding for a dairy delivery app.</p>
+                  <p class="mt-2">See the full prototype <a href="https://www.figma.com/proto/e9YsZBSq212gV1ubrm5SgN/Dairy-Drop-Prototype?node-id=8011-2762&t=GbDTNwQYPqg8HxCG-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=8002%3A5617" target="_blank" class="underline font-semibold hover:text-pink-300">here</a>.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-3 font-semibold text-gray-700">Dairy Drop Prototype</h3>
+            <p class="text-sm text-gray-400">UI/UX Design</p>
+          </div>
+          <div class="portfolio-item group" data-discipline="motion-design">
+            <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow">
+              <img src="./public/assets/Sara%20Berry%20Style%20Frame.png" alt="The Ballad of Sara Berry" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+                <div class="text-white text-sm text-center">
+                  <p class="font-semibold mb-2">Adobe After Effects - 2026</p>
+                  <p>A character-based animation created for the song &ldquo;The Ballad of Sara Berry&rdquo;. Inspired by zeugmas and animatic-style animations.</p>
+                  <p class="mt-2">See the full video <a href="https://youtu.be/LoO9g5mETkY" target="_blank" class="underline font-semibold hover:text-pink-300">here</a>.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-3 font-semibold text-gray-700">'The Ballad of Sara Berry'</h3>
+            <p class="text-sm text-gray-400">Motion Design</p>
+          </div>
+          <div class="portfolio-item group" data-discipline="editorial-design">
+            <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow">
+              <img src="./public/assets/Magazine%20Spread.png" alt="Three Spread Magazine" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+                <div class="text-white text-sm text-center">
+                  <p class="font-semibold mb-2">Adobe InDesign - 2025</p>
+                  <p>A creative magazine spread focused on the musician Porter Robinson. Inspired by the tone and art of the album &ldquo;Smile! XD&rdquo;.</p>
+                  <p class="mt-2">See the full spread <a href="./public/assets/Magazine%20Spreads.pdf" target="_blank" class="underline font-semibold hover:text-pink-300">here</a>.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-3 font-semibold text-gray-700">Three Spread Magazine</h3>
+            <p class="text-sm text-gray-400">Editorial Design</p>
+          </div>
+
+          <!-- Development (4 items) -->
+          <div class="portfolio-item group" data-discipline="illustration">
+            <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow">
+              <img src="./public/assets/three%20posters.png" alt="Jinx - Arcane" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+                <div class="text-white text-sm text-center">
+                  <p class="font-semibold mb-2">Adobe Illustrator - 2025</p>
+                  <p>A set of three posters created using a limited color palette. Based on the character Jinx from Arcane and hand-drawn illustrations.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-3 font-semibold text-gray-700">Jinx - Arcane</h3>
+            <p class="text-sm text-gray-400">Illustration</p>
+          </div>
+          <div class="portfolio-item group" data-discipline="editorial-design">
+            <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow">
+              <img src="./public/assets/Noah%20Kahan%20-%20Spotify.png" alt="The View Between Villages" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+                <div class="text-white text-sm text-center">
+                  <p class="font-semibold mb-2">Adobe InDesign - 2025</p>
+                  <p>A set of matching designs created for poster, vinyl, and digital formats based on the song &ldquo;The View Between Villages&rdquo; by Noah Kahan. Inspired by Victorian-era paintings.</p>
+                  <p class="mt-2">See the full set <a href="./public/assets/The%20View%20Between%20Villages.pdf" target="_blank" class="underline font-semibold hover:text-pink-300">here</a>.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-3 font-semibold text-gray-700">The View Between Villages</h3>
+            <p class="text-sm text-gray-400">Editorial Design</p>
+          </div>
+          <div class="portfolio-item group" data-discipline="uiux-design">
+            <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow">
+              <img src="./public/assets/uPlanet.jpg" alt="uPlanet" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+                <div class="text-white text-sm text-center">
+                  <p class="font-semibold mb-2">Adobe InDesign - 2025</p>
+                  <p>A study and schedule app concept based on a case study. Inspired by astronomy and playful designs.</p>
+                  <p class="mt-2">See the full case study <a href="./public/assets/uPlanet.pdf" target="_blank" class="underline font-semibold hover:text-pink-300">here</a>.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-3 font-semibold text-gray-700">uPlanet</h3>
+            <p class="text-sm text-gray-400">UI/UX Design</p>
+          </div>
+          <div class="portfolio-item group" data-discipline="uiux-design">
+            <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow">
+              <img src="./public/assets/ReJoyce.png" alt="ReJoyce" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+                <div class="text-white text-sm text-center">
+                  <p class="font-semibold mb-2">Adobe Illustrator - 2025</p>
+                  <p>A sustainability-focused app concept based on behavioral design. Inspired by nature and an earthy color palette.</p>
+                  <p class="mt-2">See the full research <a href="./public/assets/ReJoyce.pdf" target="_blank" class="underline font-semibold hover:text-pink-300">here</a>.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-3 font-semibold text-gray-700">ReJoyce</h3>
+            <p class="text-sm text-gray-400">UI/UX Design</p>
+          </div>
+
+          <!-- Other (4 items) -->
+          <div class="portfolio-item group" data-discipline="motion-design">
+            <div class="relative aspect-[4/3] rounded-2xl overflow-hidden group-hover:shadow-lg transition-shadow">
+              <img src="./public/assets/Lottie%20Loop.png" alt="Lottie Loop GIF" class="w-full h-full object-cover" />
+              <div class="absolute inset-0 bg-black/60 flex items-center justify-center p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl">
+                <div class="text-white text-sm text-center">
+                  <p class="font-semibold mb-2">Adobe After Effects - 2026</p>
+                  <p>A perfectly looping GIF displaying my personal branding. Based on my cat, Mantis.</p>
+                  <p class="mt-2">See the GIF <a href="https://lottiefiles.com/free-animation/inm-402-scc-kristin-noboa-lottie-loop-v2-DW31LFNBbg" target="_blank" class="underline font-semibold hover:text-pink-300">here</a>.</p>
+                </div>
+              </div>
+            </div>
+            <h3 class="mt-3 font-semibold text-gray-700">Lottie Loop GIF</h3>
+            <p class="text-sm text-gray-400">Motion Design</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="py-20 md:py-28 bg-[#feeeef]">
+      <div class="max-w-2xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-pink-400 text-center mb-6">Get in Touch</h2>
+        <p class="text-center text-gray-500 mb-12">Have a question or want to work together? Drop me a line!</p>
+
+        <form id="contact-form" action="https://formspree.io/f/xdapnedo" method="POST" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 rounded-xl border border-white bg-white focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 rounded-xl border border-white bg-white focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-600 mb-1">Message</label>
+            <textarea id="message" name="message" rows="5" required
+              class="w-full px-4 py-3 rounded-xl border border-white bg-white focus:border-pink-400 focus:ring-2 focus:ring-pink-200 outline-none transition resize-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full py-3 rounded-full bg-pink-400 text-white font-semibold hover:bg-pink-500 transition-colors">
+            Send Message
+          </button>
+          <p id="form-status" class="text-center text-sm text-green-500 hidden">Thanks! Your message has been sent.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Portfolio Lightbox -->
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 p-6 md:p-12">
+      <div class="relative w-full max-w-4xl max-h-[90vh] flex flex-col rounded-2xl overflow-hidden bg-white shadow-2xl">
+        <button id="lightbox-close" class="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors text-xl leading-none" aria-label="Close">&times;</button>
+        <div id="lightbox-image" class="flex-1 min-h-0 bg-gray-100 flex items-center justify-center text-gray-400 text-lg font-medium overflow-hidden"></div>
+        <div id="lightbox-desc" class="px-6 py-5 bg-white border-t border-gray-100">
+          <h3 id="lightbox-title" class="font-semibold text-gray-800 text-lg"></h3>
+          <p id="lightbox-text" class="mt-1 text-sm text-gray-500"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-50 text-center text-sm text-gray-400">
+      &copy; 2026 Kristin Noboa. All rights reserved.
+    </footer>
+
+    <script src="./node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
